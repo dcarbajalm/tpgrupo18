@@ -145,3 +145,47 @@ let miFooter = `
     </div>
 `
 document.querySelector("footer").innerHTML = miFooter;
+
+
+//=======================FORMULARIO=================================
+
+const btnEnviar = document.getElementById("enviar");
+
+const validación = (e) => {
+  e.preventDefault();
+  const nombreDeUsuario = document.getElementById("nombre");
+  const apellidoDeUsuario = document.getElementById("apellido");
+  const direcciónEmail = document.getElementById("email");
+  
+  if (nombre.value === "") {
+    alert("Por favor, escribe tu nombre");
+    nombre.focus();
+    return false;
+  }
+  if (apellido.value === "") {
+    alert("Por favor, escribe tu apellido");
+    apellido.focus();
+    return false;
+  }
+
+    
+  if (email.value === "") {
+    alert("Por favor, escribe tu correo electrónico");
+    email.focus();
+    return false;
+  }
+
+  if (!emailVálido(email.value)) {
+    alert("Por favor, escribe un correo electrónico válido");
+    emailAddress.focus();
+    return false;
+  }
+  
+  return true; //Enviar los datos al servidor
+}
+
+const emailVálido = email => {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+btnEnviar.addEventListener("click", validación);
