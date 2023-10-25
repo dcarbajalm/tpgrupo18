@@ -1,0 +1,880 @@
+/*En CSS los comentarios se hacen entre estos símbolos*/
+
+/*================================= DISEÑO RESPONSIVE (MOBILE, TABLET Y ESCRITORIO)========================================*/
+
+/*Propuesta Maquetación*/
+/*GRID PARA ESCRITORIO*/
+.grid-container {
+  width: 100%;
+  text-align: justify;
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  grid-template:
+    /*3 columnas y 4 filas
+      Defino altura de filas y ancho de columnas en la misma estructura*/
+    "header header" auto
+    "menu menu" auto
+    "contenido lateral" auto
+    "footer footer" auto /
+    2fr 1fr;
+}
+
+/*Encabezado*/
+.grid-container .header {
+  grid-area: header;
+}
+
+/*Menú*/
+.grid-container .midnav {
+  grid-area: menu;
+}
+
+/*Contenido*/
+.grid-container .contenido {
+  grid-area: contenido;
+}
+
+/*Lateral*/
+.grid-container .lateral {
+  grid-area: lateral;
+  display: grid;
+   
+}
+
+
+
+
+/*Pie*/
+.grid-container .footer {
+  grid-area: footer;
+}
+
+
+
+/*Selector universal - Aplica a todos los elementos de la página*/
+* {
+  margin: 5px;
+  /*padding: 5px;*/
+  background-color: #B7B7A4;
+  text-align: justify;
+  font-family: Arial, 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+}
+
+/*Selector de etiqueta*/
+/* h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+} */
+
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Poiret One', cursive
+}
+
+h3 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-size: 1.25rem;
+}
+
+
+p {
+  font-size: 1.2rem;
+  font-family: 'Bitter', serif;
+  text-justify: distribute;
+
+}
+
+ul,
+li {
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  font-family: 'Poiret One', cursive;
+  padding: 5px;
+  list-style-type: none;
+}
+
+
+a {
+  /* border-radius: 50px; */
+  color: black;
+}
+
+.contenido .letra {
+  font-size: 1.2rem;
+  align-self: baseline;
+  margin-left: 60%;
+}
+
+a:hover {
+  background-color: white;
+  font-family: 'Poiret One', cursive;
+}
+
+a:visited {
+  color: black;
+  font-family: 'Poiret One', cursive;
+  /* background-color: white; */
+}
+
+/*Añadir texto a la derecha de un video o imagen*/
+.contenedor-video {
+  display: flex;
+}
+
+.contenido {
+  display: grid;
+}
+
+
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor .video {
+  position: relative;
+  max-width: 600px;
+  width: 60%;
+  justify-content: center;
+}
+
+
+.video {
+  width: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.txtCD {
+  margin-top: 0;
+  float: right;
+  box-sizing: border-box;
+  width: 45%;
+  align-self: center;
+}
+
+/*Lucas*/
+.contenedor {
+  display: flex;
+  border: double 2px;
+  padding: auto;
+  border-color: #c4ceb0;
+}
+
+/* contenedor de videos */
+video {
+  padding: auto;
+  border-color: #c4ceb0;
+  border-style: ridge;
+  /*padding: 5px;*/
+  width: 100%;
+
+}
+
+/*Selector de clase - Se puede reutilizar*/
+/*Creamos la clase subtitulos, por ejemplo*/
+/*Esta clase la aplicamos en la etiqueta que queremos modificar en el index*/
+/* .subtitulos {
+  margin-left: 50px;
+  color: black;
+  background-color: rgb(157, 102, 209);
+}
+ */
+/*Puedo crear otras clases y usarlas juntas*/
+
+
+/*Esta clase se usa en el menú con el nombre de la página correspondiente. 
+Ejemplo: En el menú de la página contacto, sólo se coloca la clase en el href contacto*/
+
+
+/*Selector de ID - Sólo se aplica una vez*/
+/*Se aplica en el html*/
+#texto {
+  color: rgb(0, 0, 0);
+  text-align: justify;
+  margin-left: 5px;
+}
+
+/*==================================DIAPOSITIVAS HEADER================================================*/
+/*Creando el carrusel en el header*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+/*Creamos la clase para las diapositivas*/
+.mySlides {
+  display: none;
+}
+
+/*Añadimos posicionamiento vertical a las imagenes que conforman el carrusel*/
+img {
+  vertical-align: middle;
+}
+
+/* Container carrusel*/
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Botones siguiente y previo, nos da la opción de pasar la imagen manualmente */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.12rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: #71717100;
+}
+
+/*Posicionamos el botón "siguiente" a la derecha*/
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Al posicionarnos sobre el botón, añadimos un fondo negro semi transparente */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* subtitulos de las imagenes*/
+.text {
+  color: #f2f2f2;
+  font-size: 0.94rem;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: #71717100;
+}
+
+/* Numeros (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 0.75rem;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background-color: #71717100;
+}
+
+/* Los puntos indicadores */
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6 ease;
+}
+
+.active_image,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Animación Fading */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+/*Añadimos una secuencia de desvanecimiento */
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+
+
+/*====================================BARRA DE NAVEGACIÓN O MENÚ=======================================*/
+/*Aqui aplicamos efectos al menú*/
+
+.midnav {
+
+  /* overflow: hidden; */
+  background-color: #A5A58D;
+  position: sticky;
+  top: 0;
+  min-height: 60px;
+  z-index: 1;
+  /*con esto posicionamos el menú arriba de todos los elementos, evitando que otro 
+se superponga*/
+}
+
+/*Estilos para los elementos a del menú*/
+.midnav a {
+  list-style-type: none;
+  float: left;
+  display: block;
+  background-color: #A5A58D;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.06rem;
+  font-family: 'Gelasio', serif;
+}
+
+/*Animación de cambio de color cuando un enlace o página está activo*/
+.active {
+  background-color: #6B705C !important;
+  color: rgb(0, 0, 0);
+}
+
+
+/*Ocultamos el icono de barras del menú cuando esté en pantalla completa*/
+.midnav .icon {
+  display: none;
+  margin-top: 0;
+}
+
+/*Menú desplegable*/
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 1.06rem;
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  background-color: #A5A58D;
+  font-family: inherit;
+  margin: 0;
+  font-family: 'Gelasio', serif;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #B7B7A4;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Cambia el color del enlace cuando se pasa el puntero sobre el elemento*/
+.midnav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #6B705C;
+  color: rgb(0, 0, 0);
+}
+
+/* Cambia el color del enlace cuando se pasa el puntero sobre el elemento*/
+.dropdown-content a:hover {
+  background-color: #B7B7A4;
+  color: black;
+}
+
+/* Despliega los elementos del menú desplegable al pasar el puntero sobre el elemento*/
+/* .dropdown:hover .dropdown-content {
+  display: block;
+  margin-top: 0;
+} */
+
+.show {
+  display: block;
+}
+
+/*Se cambia el color de fondo del icono de las barras del menú por uno transparente*/
+.fa-bars {
+  background-color: #71717100;
+}
+
+/*Aplicamos transparencia a los iconos de la barra de menú */
+/*Icono de la lupa */
+.fa-search {
+  background-color: #33333300;
+}
+
+/*Icono de home*/
+.fa-home {
+  background-color: #33333300;
+  margin-left: 0;
+  padding: 0;
+}
+
+/*Icono de contacto*/
+.fa-fw {
+  background-color: #33333300;
+  margin-left: 0;
+  padding: 0;
+}
+
+/*Icono de contacto*/
+.fa-envelope {
+  margin-left: 0;
+}
+
+.fa-caret-down {
+  background-color: #71717100;
+  margin-left: 0;
+  padding: 0;
+}
+
+/*Icono nota musical*/
+.fa-music {
+  background-color: #71717100;
+  margin-left: 0;
+  padding: 0;
+}
+
+/*Icono edificio*/
+.fa-building {
+  background-color: #71717100;
+  margin-left: 0;
+  padding: 0;
+}
+
+
+/*======================================BARRA DE BÚSQUEDA==============================================*/
+
+/*Creamos la clase del contenedor de búsqueda para aplicarle los atributos*/
+.search-container {
+  float: right;
+  background-color: #33333300;
+  margin-right: 5px;
+}
+
+/*Interior de la caja de busqueda */
+.search-container input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 0.94rem;
+}
+
+/*Propiedades del botón de búsqueda*/
+.search-container button {
+  float: right;
+  padding: 3px 5px;
+  margin-top: 8px;
+  margin-right: 10px;
+  background: #6B705C;
+  font-size: 0.94rem;
+  border-color: #ffffff;
+  cursor: pointer;
+}
+
+/*Animación de cambio de color al pasar el puntero sobre el botón*/
+.search-container button:hover {
+  background: #B7B7A4;
+}
+
+
+/*=============================================FOOTER==================================================*/
+
+/*Esta clase enmarca todo lo que es el footer */
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  background-color: #A5A58D;
+}
+
+/*Aplicamos estilos al logo de la empresa/pagina/negocio */
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  background-color: #A5A58D;
+}
+
+/*Esta clase enmarca todo lo que se refiere a las redes sociales */
+.redes {
+  display: inline-block;
+  text-align: center;
+  background-color: #A5A58D;
+}
+
+.redes a {
+  background-color: #A5A58D;
+}
+
+/*Se aplican estilos al logo de facebook, twitter e instagram*/
+.facebook {
+  background-color: #A5A58D;
+  transition: transform .2s;
+  /* Animación */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.twitter {
+  background-color: #A5A58D;
+  transition: transform .2s;
+  /* Animación */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.instagram {
+  background-color: #A5A58D;
+  transition: transform .2s;
+  /* Animación */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+span {
+  background-color: #A5A58D;
+}
+
+h4 {
+  background-color: #A5A58D;
+  text-align: center;
+}
+
+/*Aplicamos la animación a las clases correspondientes*/
+.facebook img:hover {
+  transform: scale(1.5);
+  /* (150% zoom - Si el zoom es muy grande, se saldrá del viewport) */
+}
+
+.twitter img:hover {
+  transform: scale(1.5);
+}
+
+.instagram img:hover {
+  transform: scale(1.5);
+}
+
+
+/*=================================MAPA RESPONSIVO=====================================================*/
+.mapa {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 150px;
+  min-width: 150px;
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* El estilo del iframe entrará en el contenedor div con ancho y alto máximos */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*=================================QR RESPONSIVO=====================================================*/
+.imgqr {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  min-height: 100px;
+  min-width: 100px;
+  justify-self: center;
+  align-self: center;
+  margin-left: 25%;
+}
+
+
+
+
+/*===============TEXTO DIAPOSITIVAS RESPONSIVO=======================
+/* Para pantallas pequeñas, cambia tamaño del texto */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 0.68rem
+  }
+}
+
+
+/*===================BARRA DE BÚSQUEDA Y MENÚ RESPONSIVO======================
+/*Para hacerlo responsivo*/
+@media screen and (max-width: 300px) {
+  .search-container {
+    float: right;
+  }
+
+  .search-container input[type=text],
+  .search-container button {
+    float: left;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .search-container input[type=text] {
+    border: 1px solid #ccc;
+  }
+
+  .fa-search {
+    margin-left: 50%;
+  }
+}
+
+
+/* Cuando la pantalla es menor a 600 pixeles de ancho, ocultamos todos los enlaces,
+  excepto por el primero ("Inicio"). Y debe mostrar el icono que abre y cierra el menú(.icon) */
+@media screen and (max-width: 640px) {
+
+  /* .midnav a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none;
+  } */
+
+  .midnav a,
+  .dropdown .dropbtn {
+    display: none;
+  }
+
+  .midnav a.icon {
+    float: left;
+    display: block;
+    position: absolute;
+  }
+}
+
+/* La clase "responsive" se añade a midnav con JavaScript cuando el usuario cliquea en el icono.
+  Esta clase hace que midnav se vea bien en pantallas pequeñas.*/
+@media screen and (max-width: 640px) {
+  .midnav.responsive {
+    position: sticky;
+  }
+
+  .midnav.responsive .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .midnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    position: relative;
+    top: 55px;
+    margin: auto;
+  }
+
+  .midnav.responsive .dropdown-content a {
+    position: relative;
+    top: 0;
+  }
+
+  .midnav.responsive .dropdown {
+    float: none;
+    position: relative;
+    top: 55px;
+  }
+
+
+  .midnav.responsive .dropdown-content {
+    position: relative;
+    top: 0;
+  }
+
+  .midnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .midnav.responsive .search-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 0;
+  }
+
+
+}
+
+/*===========================FOOTER RESPONSIVO=========================
+/*Lo hacemos resposivo*/
+@media screen and (max-width: 640px) {
+  .redes {
+    font-size: 0.68rem;
+  }
+
+  h4 {
+    font-size: 0.68rem;
+  }
+}
+
+
+/* ===================GRID PARA TABLETA====================================*/
+@media (max-width: 1024px) {
+  /* .enlace{
+    padding-left: 20px;
+  } */
+
+  .grid-container {
+
+    text-align: justify;
+    justify-items: center;
+    align-items: center;
+
+    grid-template:
+      /*2 columnas y 5 filas*/
+      'header' auto
+      'menu' auto
+      'contenido' auto
+      'lateral' auto
+      'footer' auto/
+      1fr;
+  }
+
+  .grid-container .lateral {
+    display: inline-flex;
+    justify-content: space-around;
+    
+  }
+
+  .contenido {
+    width: 100%;
+  }
+
+  .qr_sect {
+    width: 25%;
+  }
+
+  .map_sect {
+    width: 75%;
+
+  }
+
+  h3 {
+    font-size: 0.75rem;
+
+  }
+
+  .imgqr {
+    justify-self: center;
+    width: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .mapa {
+    justify-self: center;
+    width: 100%;
+    min-height: 200px;
+    min-width: 400px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+  }
+}
+
+/*==============================GRID PARA MOBILE==================*/
+@media(max-width:640px) {
+
+
+
+  .grid-container {
+    text-align: justify;
+    justify-items: center;
+    align-items: center;
+    grid-template:
+      /*1 columna y 5 filas*/
+      'header' auto
+      'menu' auto
+      'contenido' auto
+      'lateral' auto
+      'footer' auto/
+      1fr;
+  }
+
+  .grid-container .lateral {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .contenido {
+    width: 100%;
+  }
+
+  .qr_sect {
+    width: 100%;
+  }
+
+  .map_sect {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 0.68rem;
+
+  }
+
+  .imgqr {
+    justify-self: center;
+    width: 50%;
+    align-self: center;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .mapa {
+    justify-self: center;
+    width: 100%;
+    min-height: 200px;
+    min-width: 300px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}

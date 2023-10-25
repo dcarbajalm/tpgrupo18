@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Music Store</title>
+  <link rel="icon" href="./Img/Disk.png">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,200&family=Oswald:wght@300&family=Poiret+One&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital@1&display=swap" rel="stylesheet">
+
+
+  <!-- CSS Externo -->
+  <link rel="stylesheet" href="./css/estilos.css">
+
+</head>
+
+<body>
+  <!--Agrego el contenedor que llama al grid-->
+  <div class="grid-container">
+    <header class="header">
+
+    </header>
+
+    <nav class="midnav" id="navegador">
+
+      <!-- Los menús index, contacto, etc. son enlaces a otros archivos html creados anteriormente -->
+      <a href="index.html"><i class="fa fa-fw fa-home"></i>Inicio</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" onclick="subMenu()">Géneros
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="miDropdown">
+          <a href="genero1.html"><i class="fa fa-music"></i>Rock</a>
+          <a href="genero2.html"><i class="fa fa-music"></i>Cumbia</a>
+          <a href="genero3.html"><i class="fa fa-music"></i>Trap</a>
+        </div>
+
+      </div>
+
+      <a class="active" href="nosotros.html"><i class="fa fa-building"></i>Sobre nosotros</a>
+      <a href="contacto.html"><i class="fa fa-fw fa-envelope"></i>Contacto</a>
+      <a href="javascript:void(0);" class="icon" onclick="miMenu()">
+        <i class="fa fa-bars" style="color: #000000;"></i></a>
+
+      <div class="search-container">
+        <!-- <form action="/action_page.php"> --> <!--validar la busqueda con php -->
+        <input type="text" placeholder="Buscar.." name="buscar">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        <!-- </form> -->
+      </div>
+    </nav>
+
+    <main class="contenido">
+      <section>
+        <h1>¡Bienvenidos a The Music Store!</h1>
+        <br>
+        <p style="text-align: center;"><b>Somos más que una tienda de discos; somos amantes de la música y apasionados
+            por compartir nuestra pasión con
+            vos. Permitinos llevarte en un viaje a través de nuestra historia y contarte cómo hemos evolucionado desde
+            los
+            humildes comienzos hasta convertirnos en una referencia en la industria musical. </b> </p>
+        <br>
+        <hr>
+        <p>
+
+
+          <br>
+
+
+
+        <h2>Nuestra Historia</h2> <br>
+
+        <p>Todo comenzó en el corazón de Buenos Aires, en el año 1995. Un grupo de amigos, Juan y Darío, con una pasión
+          compartida por la música decidió llevar su amor por los vinilos a un nivel completamente nuevo. En aquel
+          entonces,
+          The Music Store era una pequeña tienda de discos de barrio que se convertiría en un santuario musical para
+          aficionados y coleccionistas. Trabajábamos exclusivamente de forma física, brindando a nuestros clientes la
+          experiencia única de buscar y comprar discos en persona.</p> <br>
+
+        <h2>La Transformación Digital</h2><br>
+
+        <p>Con el paso del tiempo, el mundo de la música cambió, y nosotros cambiamos con él. A medida que la música
+          digital, el streaming y las descargas en línea se volvieron más populares, nos dimos cuenta de que
+          necesitábamos
+          evolucionar. Fue entonces cuando decidimos llevar nuestra pasión por la música al mundo en línea.
+          <br><br>
+          En el año 2023, lanzamos <b>The Music Store Online</b>, una plataforma que permite a los amantes de la música
+          de todo el
+          mundo acceder a una amplia selección de vinilos, CDs y otros formatos musicales desde la comodidad de sus
+          hogares.
+          Este paso marcó el inicio de nuestra misión de llevar la música a cada rincón del mundo.
+        </p> <br>
+
+
+        <h2> Nuestra Misión</h2><br>
+
+        <p> En The Music Store, nuestra misión es sencilla pero poderosa: <b>conectamos a las personas con la música que
+            aman</b>. A
+          través de nuestra tienda en línea, no sólo ofrecemos una extensa colección de discos musicales, sino que
+          también
+          brindamos una plataforma para descubrir nuevas melodías y redescubrir clásicos. Creemos en la importancia de
+          preservar la esencia de la música en formato físico y digital, y trabajamos incansablemente para hacerlo
+          posible.
+
+        </p> <br>
+
+        <h2> Nuestra Comunidad</h2><br>
+
+        <p> Nuestra tienda no sería lo que es hoy sin nuestros clientes y amigos. A lo largo de los años, hemos
+          construido una
+          <b>comunidad de amantes de la música que comparten nuestra pasión</b>. Nos enorgullece ser parte de tu viaje
+          musical y
+          estamos agradecidos por tu continuo apoyo.
+
+
+        </p> <br>
+
+        <h2> Ofrecemos Servicios de Sala de Grabación</h2><br>
+
+        <p> En The Music Store, también ofrecemos servicios de <b>sala de grabación de alta calidad para músicos y
+            artistas
+            locales</b>. Nuestra sala de grabación está equipada con tecnología de vanguardia para ayudarte a capturar
+          tus
+          creaciones musicales de manera excepcional.
+
+
+        </p> <br>
+
+
+
+        <h2> El Futuro</h2><br>
+
+        <p> El viaje de The Music Store está lejos de terminar. Estamos comprometidos a seguir creciendo y evolucionando
+          para
+          servir mejor a nuestra comunidad de amantes de la música. Esperamos que te unas a nosotros en esta emocionante
+          travesía. </p>
+        <br><br>
+        <p style="text-align: center;"><b> Gracias por visitarnos y ser parte de nuestra historia. La música es la
+            fuerza que nos impulsa, y esperamos
+            compartirla contigo en cada paso del camino.</b>
+
+
+
+        </p> <br><br>
+        <br>
+
+
+        <h2 style="text-align: center;"> ¡Sintonízate con The Music Store y disfruta de la música como nunca antes!</h2>
+        <br>
+
+
+
+
+
+        <br><br>
+
+      </section>
+      <!-- Esto crea un enlace que nos lleva al inicio de la página -->
+      <a href="#">Ir Arriba</a>
+      <hr>
+    </main>
+
+    <aside class="lateral">
+      <section class="qr_sect">
+        <h3>Escaneá el QR y descargá la APP</h3>
+        <br>
+        <img class="imgqr" src="./Img/qrcode_boobooboo.netlify.app.png" alt="qrcode_boobooboo">
+        <br>
+      </section>
+      <hr>
+      <!-- Sección Mapa -->
+      <section class="" map_sect">
+        <h3>Encontranos en</h3>
+        <br>
+        <div class="mapa">
+
+          <iframe class="responsive-iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.412813805178!2d-58.373416526067274!3d-34.60798014101406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadb57fd1e5f%3A0xcc737c4eb0a8614b!2sPlaza%20de%20Mayo!5e0!3m2!1ses-419!2sar!4v1698192715079!5m2!1ses-419!2sar"
+            style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+    </aside>
+    <!-- Aquí insertamos el pie de página -->
+
+    <footer class="footer">
+
+    </footer>
+
+    <script src="./js/miWeb.js"></script>
+  </div>
+</body>
+
+</html>

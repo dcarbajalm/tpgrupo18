@@ -1,0 +1,338 @@
+<!-- Este encabezado va siempre en todas las páginas. Sale automáticamente al escribir html:5 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Aquí se coloca el título o nombre de la página -->
+  <title>The Music Store</title>
+  <!-- Aquí se agrega el favicon o el ícono que acompaña el titulo de la página -->
+  <link rel="icon" href="./Img/Disk.png">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,200&family=Oswald:wght@300&family=Poiret+One&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital@1&display=swap" rel="stylesheet">
+
+  <!-- CSS Externo -->
+  <link rel="stylesheet" href="./css/estilos.css">
+
+</head>
+
+<body>
+  <!--Agrego el contenedor que llama al grid-->
+  <div class="grid-container">
+
+    <!-- Aquí va todo lo referente al encabezado -->
+    <header class="header">
+    </header>
+
+    <nav class="midnav" id="navegador">
+
+      <!-- Los menús index, contacto, etc. son enlaces a otros archivos html creados anteriormente -->
+      <a href="index.html"><i class="fa fa-fw fa-home"></i>Inicio</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" onclick="subMenu()">Géneros
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="miDropdown">
+          <a class="active" href="genero1.html"><i class="fa fa-music"></i>Rock</a>
+          <a href="genero2.html"><i class="fa fa-music"></i>Cumbia</a>
+          <a href="genero3.html"><i class="fa fa-music"></i>Trap</a>
+        </div>
+      </div>
+
+      <a href="nosotros.html"><i class="fa fa-building"></i>Sobre nosotros</a>
+      <a href="contacto.html"><i class="fa fa-fw fa-envelope"></i>Contacto</a>
+      <a href="javascript:void(0);" class="icon" onclick="miMenu()">
+        <i class="fa fa-bars" style="color: #000000;"></i></a>
+
+      <div class="search-container">
+        <!-- <form action="/action_page.php"> --> <!--validar la busqueda con php -->
+        <input type="text" placeholder="Buscar.." name="buscar">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        <!-- </form> -->
+      </div>
+    </nav>
+
+
+    <!-- Sección principal de la página -->
+    <main class="contenido">
+      <!-- Podemos dividir el contenido en secciones y vincularlas al menú -->
+      <!-- Sección Inicio -->
+      <!--  -->
+
+      <h1>Cumbia</h1>
+      <br>
+      <p style="text-align: center;">Este género musical, la cumbia argentina y sus distintas variantes, forman parte de
+        la música denominada
+        “tropical”. Llegaron a tener tanto éxito que varios temas e intérpretes musicales se transformaron en verdaderos
+        referentes del estilo formando parte de la cultura nacional,este ritmo procedente de los países caribeños,
+        particularmente de Colombia, se ha difundido en varios países .</p>
+
+      <br>
+
+      <section>
+        <h2>El origen de la cumbia argentina</h2>
+
+        <br>
+        <p>
+          La cumbia colombiana comenzó a tener adeptos allá por los años 70´s. En la provincia de Santa Fe, la
+          influencia fue tal que se vio reflejada en un estilo propio local: la cumbia santafesina. El grupo emblemático
+          fueron Los
+          Palmeras. Su tema más popular y bailado Bombón asesino ya es todo un clásico que no pasa de moda.
+        </p>
+
+        <br>
+
+        <h2>Tipos de cumbia en Argentina</h2>
+        <ul>
+          <li>Cumbia romántica de los años 90.</li>
+          <li>Cumbia villera de los años 2000.</li>
+          <li>Cumbia cheta y las nuevas tendencias.</li>
+
+        </ul>
+
+      </section>
+
+      <br>
+      <section>
+        <h2 style="text-align: center;">Algunos recomendados del mes que pueden disfrutar con su suscripción.</h2>
+        <br>
+      </section>
+
+      <h2>Yo Me Enamoré</h2>
+
+      <div class="contenedor">
+
+        <section class="video">
+          
+            <div>
+              <video controls controlslist="nodownload" src=src="./Media/Amar Azul - Yo Me Enamoré (letra).mp4"
+                width="100%">
+              </video>
+            </div>
+          
+        </section>
+
+
+        <section class="txtCD">
+         
+
+          <br>
+          <ul>
+            <li><b>Fecha de lanzamiento:</b> 1997.</li>
+            <li><b>Álbum:</b> Cumbia Nena.</li>
+            <li><b>Artista:</b> Amar Azul.</li>
+            <li><b>Género:</b> Cumbia, Cumbia del recuerdo, Música tropical.</li>
+          </ul>
+          <br><br>
+          <a class="letra" href="https://www.letras.com/amar-azul/619120/" target="_blank">Ir a Letra</a>
+        </section>
+
+        <br>
+
+
+      </div>
+
+      <hr>
+      <br>
+
+      <h2>Los Dueños del Pabellón</h2>
+
+      <div class="contenedor">
+
+        <section class="video">
+          
+            <div>
+              <video controls controlslist="nodownload" src="./Media/Los Dueños del Pabellon.mp4" width="100%" height="350px">
+              </video>
+            </div>
+          
+        </section>
+
+
+        <section class="txtCD">
+          
+
+          <br>
+          <ul>
+            <li><b>Fecha de lanzamiento:</b> 2001.</li>
+            <li><b>Álbum:</b> Para los pibes.</li>
+            <li><b>Artista:</b> Damas Gratis.</li>
+            <li><b>Género:</b> Cumbia, Cumbia Villera.</li>
+          </ul>
+          <br><br>
+          <a class="letra" href="https://www.letras.com/damas-gratis/256864/" target="_blank">Ir a Letra</a>
+        </section>
+
+        <br>
+
+
+      </div>
+
+      <hr>
+      <br>
+
+
+      <h2>Llorarás mas de Diez Veces</h2>
+
+      <div class="contenedor">
+
+        <section class="video">
+         
+            <div>
+              <video controls controlslist="nodownload"
+                src="./Media/Leo Mattioli - Llorarás Más de Diez Veces (en vivo en el Opera).mp4" width="100%">
+              </video>
+            </div>
+          
+        </section>
+
+
+        <section class="txtCD">
+         
+
+          <br>
+          <ul>
+            <li><b>Fecha de lanzamiento:</b> 2004.</li>
+            <li><b>Álbum:</b> Aún Sigue La Lección.</li>
+            <li><b>Artista:</b> Leo Mattioli.</li>
+            <li><b>Género:</b> Cumbia santafesina.</li>
+          </ul>
+          <br><br>
+          <a class="letra" href="https://www.letras.com/leo-mattioli/392052/" target="_blank">Ir a Letra</a>
+        </section>
+
+        <br>
+
+
+      </div>
+
+      <hr>
+      <br>
+
+
+      <h2>Bronceado</h2>
+
+      <div class="contenedor">
+
+        <section class="video">
+          
+            <div>
+              <video controls controlslist="nodownload" src="./Media/MARAMA - Bronceado (Video Oficial).mp4"
+                width="100%">
+              </video>
+            </div>
+          
+        </section>
+
+
+        <section class="txtCD">
+          
+
+          <br>
+          <ul>
+            <li><b>Fecha de lanzamiento:</b> 2015.</li>
+            <li><b>Álbum:</b> Todo comenzó bailando.</li>
+            <li><b>Artista:</b> Maramá.</li>
+            <li><b>Género:</b> Cumbia Pop, Cumbia cheta.</li>
+          </ul>
+          <br><br>
+          <a class="letra" href="https://www.letras.com/marama/bronceado/" target="_blank">Ir a Letra</a>
+        </section>
+
+        <br>
+
+
+      </div>
+
+      <hr>
+      <br>
+
+      <h2>Un Finde</h2>
+
+      <div class="contenedor">
+
+        <section class="video">
+         
+            <div>
+              <video controls controlslist="nodownload" src="./Media/Ke Personajes, FMK, Big One -finde.mp4"
+                width="100%">
+              </video>
+            </div>
+        
+        </section>
+
+
+        <section class="txtCD">
+         
+
+          <br>
+          <ul>
+            <li><b>Fecha de lanzamiento:</b> 2023.</li>
+            <li><b>Álbum:</b> Crossover 2.</li>
+            <li><b>Artista:</b> Ke personajes, Big One, FMK.</li>
+            <li><b>Género:</b> Cumbia , pop.</li>
+          </ul>
+          <br><br>
+          <a class="letra" href="https://www.letras.com/big-one/un-finde-part-fmk-ke-personajes-crossover-2/" target="_blank">Ir a
+            Letra</a>
+        </section>
+
+        <br>
+
+
+      </div>
+
+      
+      <br>
+
+ <!-- Esto crea un enlace que nos lleva al inicio de la página -->
+ <a href="#">Ir Arriba</a>
+ <hr>
+
+ 
+ 
+  </main>
+
+  <aside class="lateral">
+    <section class="qr_sect">
+      <h3>Escaneá el QR y descargá la APP</h3>
+      <br>
+      <img class="imgqr" src="./Img/qrcode_boobooboo.netlify.app.png" alt="qrcode_boobooboo">
+      <br>
+    </section>
+    <hr>
+    <!-- Sección Mapa -->
+    <section class="" map_sect">
+      <h3>Encontranos en</h3>
+      <br>
+      <div class="mapa">
+
+        <iframe class="responsive-iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.412813805178!2d-58.373416526067274!3d-34.60798014101406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadb57fd1e5f%3A0xcc737c4eb0a8614b!2sPlaza%20de%20Mayo!5e0!3m2!1ses-419!2sar!4v1698192715079!5m2!1ses-419!2sar"
+          style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </aside>
+
+
+  <!-- Aquí insertamos el pie de página -->
+
+  <footer class="footer">
+
+  </footer>
+
+  <script src="./js/miWeb.js"></script>
+  </div>
+</body>
+
+</html>

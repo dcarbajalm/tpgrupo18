@@ -1,0 +1,198 @@
+<!-- Este encabezado va siempre en todas las páginas. Sale automáticamente al escribir html:5 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Aquí se coloca el título o nombre de la página -->
+  <title>The Music Store</title>
+  <!-- Aquí se agrega el favicon o el ícono que acompaña el titulo de la página -->
+  <link rel="icon" href="./Img/Disk.png">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,200&family=Oswald:wght@300&family=Poiret+One&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital@1&display=swap" rel="stylesheet">
+
+
+  <!-- CSS Externo -->
+  <link rel="stylesheet" href="./css/estilos.css">
+
+
+
+</head>
+
+<body>
+  <!-- Aquí va todo lo referente al encabezado -->
+  <!--Agrego el contenedor que llama al grid-->
+  <div class="grid-container">
+
+    <header class="header">
+
+    </header>
+
+
+    <!-- Menú -->
+
+    <nav class="midnav" id="navegador">
+
+      <!-- Los menús index, contacto, etc. son enlaces a otros archivos html creados anteriormente -->
+
+      <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Inicio</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" onclick="subMenu()">Géneros
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="miDropdown">
+          <a href="genero1.html"><i class="fa fa-music"></i>Rock</a>
+          <a href="genero2.html"><i class="fa fa-music"></i>Cumbia</a>
+          <a href="genero3.html"><i class="fa fa-music"></i>Trap</a>
+        </div>
+      </div>
+
+      <a href="nosotros.html"><i class="fa fa-building"></i>Sobre nosotros</a>
+      <a href="contacto.html"><i class="fa fa-fw fa-envelope"></i>Contacto</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="miMenu()">
+        <i class="fa fa-bars" style="color: #000000;"></i></a>
+
+      <div class="search-container">
+        <!-- <form action="/action_page.php"> --> <!--validar la busqueda con php -->
+        <input type="text" placeholder="Buscar.." name="buscar">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        <!-- </form> -->
+      </div>
+    </nav>
+
+    <main class="contenido">
+      <!-- Sección principal de la página -->
+      <div class="contenedor">
+
+    
+        <!--  -->
+        <section>
+          <br>
+          <h1>Bienvenidos a The Music Store</h1>
+          <br>
+            <p style="text-align: center;"><b>En este espacio queremos dar a conocer nuestro negocio que esta orientado a la industria musical ya sea como
+              suscriptor, cliente, o músico que necesite un espacio amigo para dar a conocer su música y por qué no
+              encontrar a un nuevo talento. </b> </p>
+          <br>
+          <hr>
+        
+
+          <section>
+            <br>
+            <h2>¿Qué ofrecemos a nuestros suscriptores?</h2>
+            <br>
+            <p>
+              Ofrecemos dos tipos de suscripciones, la versión <b>Starter pack </b> que cuenta con acceso a toda la
+              música disponible en nuestra plataforma y la versión <b>Gold pack</b> que cuenta con acceso a toda la
+              música disponible en nuestra plataforma y material exclusivo de entrevistas por stream hechas con artistas
+              locales.
+            </p>
+          </section>
+
+
+          <section>
+            <br>
+            <h2>¿Cuál es el costo?</h2>
+            <br>
+            <ul>
+              <li>Starter pack: 5 USD/Mes.</li>
+              <li>Gold pack: 10 USD/Mes.</li>
+            </ul>
+          </section>
+
+          <section>
+            <br>
+            <h2>¿Qué ofrecemos a músicos?</h2>
+            <br>
+            <p>
+              Contamos con una <b>sala de grabación que posee alta tecnologia en equipos de sonido y producción
+                musical</b> para que puedan trabajar de forma profesional en sus proyectos, la sala puede alquilarse en
+              formatos de 3, 6, y 12 hs.
+              <br>
+              De forma adicional contamos con la opción de contratar al ingeniero en sonido que forma parte de nuestro
+              equipo para la producción de sus proyectos.
+            </p>
+          </section>
+
+          <section>
+            <br>
+            <h2>¿Cuál es el costo del Set de Grabación?</h2>
+            <br>
+            <ul>
+              <li> 3 hs: USD 50.</li>
+              <li> 6 hs: USD 100.</li>
+              <li> 12 hs: USD 150.</li>
+            </ul>
+
+            <h2>Opcional</h2>
+            <ul>
+              <li>Ingeniero en sonido: USD 200.</li>
+            </ul>
+          </section>
+
+          <section>
+            <br>
+            <h2>Sección Géneros</h2>
+            <br>
+            <p>
+              En nuestro sitio ofrecemos dentro de la sección "Géneros" una vista previa del contenido que se puede
+              encontrar en nuestra plataforma. Todos los meses compartimos nuevas canciones.
+            </p>
+          </section>
+
+
+          <br><br>
+
+          <a href="#">Ir Arriba</a>
+
+          <hr>
+        </section>
+      </div>
+    </main>
+
+    <aside class="lateral">
+      <div class="contenido_lateral">
+      <section class="qr_sect">
+        <h3>Escaneá el QR y descargá la APP</h3>
+        <br>
+        <img class="imgqr" src="./Img/qrcode_boobooboo.netlify.app.png" alt="qrcode_boobooboo">
+        <br>
+      </section>
+      <hr>
+      <!-- Sección Mapa -->
+      <section class="" map_sect">
+        <h3>Encontranos en</h3>
+        <br>
+        <div class="mapa">
+
+          <iframe class="responsive-iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.412813805178!2d-58.373416526067274!3d-34.60798014101406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadb57fd1e5f%3A0xcc737c4eb0a8614b!2sPlaza%20de%20Mayo!5e0!3m2!1ses-419!2sar!4v1698192715079!5m2!1ses-419!2sar"
+            style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+    </div>
+    </aside>
+
+
+    <!-- Aquí insertamos el pie de página -->
+
+    <footer class="footer">
+
+    </footer>
+
+    <script src="./js/miWeb.js"></script>
+  </div>
+</body>
+
+</html>

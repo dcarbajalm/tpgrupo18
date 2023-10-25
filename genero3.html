@@ -1,0 +1,348 @@
+<!-- Este encabezado va siempre en todas las páginas. Sale automáticamente al escribir html:5 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Aquí se coloca el título o nombre de la página -->
+  <title>The Music Store</title>
+  <!-- Aquí se agrega el favicon o el ícono que acompaña el titulo de la página -->
+  <link rel="icon" href="./Img/Disk.png">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,200&family=Oswald:wght@300&family=Poiret+One&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital@1&display=swap" rel="stylesheet">
+
+  <!-- CSS Externo -->
+  <link rel="stylesheet" href="./css/estilos.css">
+
+</head>
+
+<body>
+  <!--Agrego el contenedor que llama al grid-->
+  <div class="grid-container">
+
+    <!-- Aquí va todo lo referente al encabezado -->
+    <header class="header">
+
+    </header>
+
+    <nav class="midnav" id="navegador">
+
+      <!-- Los menús index, contacto, etc. son enlaces a otros archivos html creados anteriormente -->
+      <a href="index.html"><i class="fa fa-fw fa-home"></i>Inicio</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" onclick="subMenu()">Géneros
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="miDropdown">
+          <a class="active" href="genero1.html"><i class="fa fa-music"></i>Rock</a>
+          <a href="genero2.html"><i class="fa fa-music"></i>Cumbia</a>
+          <a href="genero3.html"><i class="fa fa-music"></i>Trap</a>
+        </div>
+      </div>
+
+
+
+      <a href="nosotros.html"><i class="fa fa-building"></i>Sobre nosotros</a>
+      <a href="contacto.html"><i class="fa fa-fw fa-envelope"></i>Contacto</a>
+      <a href="javascript:void(0);" class="icon" onclick="miMenu()">
+        <i class="fa fa-bars" style="color: #000000;"></i></a>
+
+      <div class="search-container">
+        <!-- <form action="/action_page.php"> --> <!--validar la busqueda con php -->
+        <input type="text" placeholder="Buscar.." name="buscar">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        <!-- </form> -->
+      </div>
+    </nav>
+
+
+    <!-- Sección principal de la página -->
+    <main class="contenido">
+      <!-- Podemos dividir el contenido en secciones y vincularlas al menú -->
+      <!-- Sección Inicio -->
+      <!--  -->
+
+      <br><br>
+
+      <h1>Trap</h1>
+      <br>
+      <p style="text-align: center;">Este género musical se convirtió, en poco tiempo, en uno de los más escuchados en
+        el país. Este artículo explica
+        según la sociología las características y los orígenes de este estilo de música. Quiénes lo producen, cuál es su
+        principal público y qué implicancias tienen sus letras, muchas veces cuestionadas.</p>
+
+      <br>
+
+      <section>
+        <h2>¿Cómo se popularizó en Argentina el consumo de trap?</h2>
+
+        <br>
+        <p>
+          El presidente Alberto Fernández compartió en las redes sociales un video donde se encontró en la quinta de
+          Olivos con Elián Ángel Valenzuela, el trapero más conocido como L-Gante, quién es hoy uno de los artistas más
+          escuchados del país y pionero de un nuevo subgénero conocido como Cumbia 420, un estilo musical que fusiona el
+          trap con la cumbia, el reggaetón y hasta el folklore. <br>
+          L-Gante es una de las tantas figuras que forman parte de lo que hoy se conoce como el trap argentino. <br>
+
+          La etiqueta de “artista de trap” es bastante laxa y a veces mal empleada, pero se considera que abarca a
+          músicos que van desde Nicki Nicole a Cazzu, pasando por WOS y Duki. En este mismo sentido, hay muchos
+          exponentes y sumados alcanzan miles de millones de reproducciones en Spotify y YouTube. <br>
+
+          El trap, así como el reggaetón, el rap, el hip-hop y otros, son parte de lo que hoy se conoce como música
+          urbana, un universo muy amplio que podría ser considerado como el mayor pilar cultural y comercial de América
+          Latina. La música urbana es, al menos en Argentina, la que más suena en radios o en fiestas y la que registra
+          un mayor número de reproducciones en distintas plataformas y la más consumida en términos masivos por las
+          generaciones jóvenes.
+        </p>
+
+
+        <section>
+
+
+          <br>
+          <section>
+            <h2 style="text-align: center;">A continuación dejamos contenido que pueden disfrutar con nuestras
+              suscripciones.</h2>
+          </section>
+
+          <br>
+
+          
+          <h2>El día más feliz</h2>
+
+          <div class="contenedor">
+
+            <section class="video">
+             
+                <div>
+                  <video controls controlslist="nodownload"
+                    src="./Media/EL DIA MAS FELIZ   -   L-GANTE    -    Prod. Negro Dub _ DT Bilardo.mp4" width="100%">
+                  </video>
+                </div>
+             
+            </section>
+
+
+            <section class="txtCD">
+             
+              <br>
+              <ul>
+                <li><b>Fecha de lanzamiento:</b> 2023.</li>
+                <li><b>Álbum:</b> El Día Más Feliz.</li>
+                <li><b>Artista:</b> L-Gante, DT.Bilardo, Negro Dub.</li>
+                <li><b>Género:</b> Trap, Urbano.</li>
+              </ul>
+              <br><br>
+              <a class="letra" href="https://www.letras.mus.br/l-gante/el-dia-mas-feliz/" target="_blank">Ir a Letra</a>
+            </section>
+
+            <br>
+
+
+          </div>
+
+          <hr>
+          <br>
+
+
+          <h2>La Nena de Argentina</h2>
+
+          <div class="contenedor">
+
+            <section class="video">
+             
+                <div>
+                  <video controls controlslist="nodownload"
+                    src="./Media/Maria Becerra - LA NENA DE ARGENTINA (Official Video).mp4" width="100%">
+                  </video>
+                </div>
+             
+            </section>
+
+
+            <section class="txtCD">
+             
+
+              <br>
+              <ul>
+                <li><b>Fecha de lanzamiento:</b> 2022.</li>
+                <li><b>Álbum:</b> La nena de Argentina.</li>
+                <li><b>Artista:</b> María Becerra.</li>
+                <li><b>Género:</b> Trap, Urbano, Reggaetón.</li>
+              </ul>
+              <br><br>
+              <a class="letra" href="https://www.letras.com/maria-becerra/la-nena-de-argentina/" target="_blank">Ir a Letra</a>
+            </section>
+
+            <br>
+
+
+          </div>
+
+          <hr>
+          <br>
+
+
+          <h2>Givenchy</h2>
+
+          <div class="contenedor">
+
+            <section class="video">
+              
+                <div>
+                  <video controls controlslist="nodownload" src="./Media/DUKI - GIVENCHY (Video Oficial).mp4"
+                    width="100%">
+                  </video>
+                </div>
+             
+            </section>
+
+
+            <section class="txtCD">
+              
+
+              <br>
+              <ul>
+                <li><b>Fecha de lanzamiento:</b> 2022.</li>
+                <li><b>Álbum:</b> Temporada de reggaetón 2.</li>
+                <li><b>Artista:</b> Duki.</li>
+                <li><b>Género:</b> Trap, Urbano latino.</li>
+              </ul>
+              <br><br>
+              <a class="letra" href="https://www.letras.com/duki/givenchy/" target="_blank">Ir a Letra</a>
+            </section>
+
+            <br>
+
+
+          </div>
+
+          <hr>
+          <br>
+
+
+
+          <h2>Cuatro veinte</h2>
+
+          <div class="contenedor">
+
+            <section class="video">
+             
+                <div>
+                  <video controls controlslist="nodownload" src="./Media/Emilia - cuatro veinte (Official Video).mp4"
+                    width="100%">
+                  </video>
+                </div>
+             
+            </section>
+
+
+            <section class="txtCD">
+              
+
+              <br>
+              <ul>
+                <li><b>Fecha de lanzamiento:</b> 2022.</li>
+                <li><b>Álbum:</b> ¿Tú crees en mí?.</li>
+                <li><b>Artista:</b> Emilia Mernes.</li>
+                <li><b>Género:</b> Trap, Latino, Pop.</li>
+              </ul>
+              <br><br>
+              <a class="letra" href="https://www.letras.com/emilia-mernes/cuatro-veinte/" target="_blank">Ir a Letra</a>
+            </section>
+
+            <br>
+
+
+          </div>
+
+          <hr>
+          <br>
+
+
+          <h2>Que te vaya bien</h2>
+
+          <div class="contenedor">
+
+            <section class="video">
+              
+                <div>
+                  <video controls controlslist="nodownload" src="./Media/CALLEJERO FINO - 🥀 QUE TE VAYA BIEN 🥀.mp4"
+                    width="100%">
+                  </video>
+                </div>
+             
+            </section>
+
+
+            <section class="txtCD">
+              
+
+              <br>
+              <ul>
+                <li><b>Fecha de lanzamiento:</b> 2023.</li>
+                <li><b>Álbum:</b> Que Te Vaya Bien.</li>
+                <li><b>Artista:</b> Callejero Fino.</li>
+                <li><b>Género:</b> Urbano latino, Trap Argentino.</li>
+              </ul>
+              <br><br>
+              <a class="letra" href="https://www.letras.com/callejero-fino/que-te-vaya-bien/" target="_blank">Ir a Letra</a>
+            </section>
+
+            <br>
+
+
+          </div>
+
+          <hr>
+          <br>
+
+
+
+          <!-- Esto crea un enlace que nos lleva al inicio de la página -->
+          <a href="#">Ir Arriba</a>
+          <hr>
+    </main>
+
+    <aside class="lateral">
+      <section class="qr_sect">
+        <h3>Escaneá el QR y descargá la APP</h3>
+        <br>
+        <img class="imgqr" src="./Img/qrcode_boobooboo.netlify.app.png" alt="qrcode_boobooboo">
+        <br>
+      </section>
+      <hr>
+      <!-- Sección Mapa -->
+      <section class="" map_sect">
+        <h3>Encontranos en</h3>
+        <br>
+        <div class="mapa">
+
+          <iframe class="responsive-iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.412813805178!2d-58.373416526067274!3d-34.60798014101406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadb57fd1e5f%3A0xcc737c4eb0a8614b!2sPlaza%20de%20Mayo!5e0!3m2!1ses-419!2sar!4v1698192715079!5m2!1ses-419!2sar"
+            style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+    </aside>
+
+    <!-- Aquí insertamos el pie de página -->
+
+    <footer class="footer">
+
+    </footer>
+
+    <script src="./js/miWeb.js"></script>
+  </div>
+</body>
+
+</html>
