@@ -156,7 +156,9 @@ const validación = (e) => {
   const nombreDeUsuario = document.getElementById("nombre");
   const apellidoDeUsuario = document.getElementById("apellido");
   const direcciónEmail = document.getElementById("email");
-  
+
+  //Agregamos un mensaje de alerta que obligue al usuario a rellenar los campos
+
   if (nombre.value === "") {
     alert("Por favor, escribe tu nombre");
     nombre.focus();
