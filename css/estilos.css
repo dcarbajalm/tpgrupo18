@@ -38,7 +38,7 @@
 .grid-container .lateral {
   grid-area: lateral;
   display: grid;
-   
+
 }
 
 /*Pie*/
@@ -737,7 +737,7 @@ span {
 
 
 /* ===================GRID PARA TABLETA====================================*/
-/*Hay algunos problemas con align y justify en este tamaño. Ver porque no logro hacerlo*/
+
 @media (max-width: 1024px) {
 
   /* .enlace{
@@ -765,10 +765,10 @@ span {
 
   .grid-container .lateral {
     display: flex;
-    justify-content: left;
+    justify-content: space-around;
     justify-items: center;
     overflow: hidden;
-   
+
 
   }
 
@@ -778,11 +778,14 @@ span {
 
   .qr_sect {
     width: 30%;
-    /*height: 100%;*/
+    height: 100%;
     justify-items: center;
     align-items: center;
+    align-self: center;
+    justify-self: center;
     margin: 0;
-    margin-left: 0%;
+    margin-right: 5px;
+    margin-left: 0px;
     padding: 0;
   }
 
@@ -791,6 +794,9 @@ span {
     justify-items: center;
     align-content: center;
     justify-content: space-evenly;
+    margin-left: 5px;
+    margin-right: 2.5px;
+
   }
 
   h3 {
@@ -814,8 +820,8 @@ span {
     align-self: center;
     width: 100%;
     min-width: 400px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -859,7 +865,7 @@ span {
     align-items: center;
     padding: 0;
     margin-left: 0px;
-    
+
 
   }
 
