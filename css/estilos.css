@@ -775,7 +775,9 @@ span {
   .contenido {
     width: 100%;
   }
-
+.contenido_lateral{
+  width: 100%;
+}
   .qr_sect {
     width: 30%;
     height: 100%;
