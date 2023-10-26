@@ -39,7 +39,6 @@
 .grid-container .lateral {
   grid-area: lateral;
   display: grid;
-   
 }
 
 
@@ -62,11 +61,6 @@
 }
 
 /*Selector de etiqueta*/
-/* h1 {
-  color: rgb(0, 0, 0);
-  text-align: center;
-} */
-
 h1 {
   color: rgb(0, 0, 0);
   text-align: center;
@@ -75,34 +69,31 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
-  font-family: 'Poiret One', cursive
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-size: 2rem
 }
 
 h3 {
   color: rgb(0, 0, 0);
-  text-align: center;
   font-family: 'Poiret One', cursive;
+  text-align: center;
   font-size: 1.25rem;
 }
-
 
 p {
   font-size: 1.2rem;
   font-family: 'Bitter', serif;
   text-justify: distribute;
-
 }
 
-ul,
-li {
-  font-size: 1.5rem;
+ul, li {
   color: rgb(0, 0, 0);
   font-family: 'Poiret One', cursive;
+  font-size: 1.5rem;
   padding: 5px;
   list-style-type: none;
 }
-
 
 a {
   /* border-radius: 50px; */
@@ -135,8 +126,6 @@ a:visited {
   display: grid;
 }
 
-
-
 .contenedor {
   display: flex;
   justify-content: center;
@@ -148,7 +137,6 @@ a:visited {
   width: 60%;
   justify-content: center;
 }
-
 
 .video {
   width: 50%;
@@ -319,12 +307,10 @@ img {
 }
 
 
-
 /*====================================BARRA DE NAVEGACIÓN O MENÚ=======================================*/
 /*Aqui aplicamos efectos al menú*/
 
 .midnav {
-
   /* overflow: hidden; */
   background-color: #A5A58D;
   position: sticky;
@@ -627,8 +613,6 @@ h4 {
 }
 
 
-
-
 /*===============TEXTO DIAPOSITIVAS RESPONSIVO=======================
 /* Para pantallas pequeñas, cambia tamaño del texto */
 @media only screen and (max-width: 300px) {
@@ -737,7 +721,6 @@ h4 {
     top: 0;
     margin-right: 0;
   }
-
 
 }
 
