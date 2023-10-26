@@ -764,7 +764,7 @@ span {
   }
 
   .grid-container .lateral {
-    display: flex;
+    display: inline-flex;
     justify-content: space-around;
     justify-items: center;
     overflow: hidden;
