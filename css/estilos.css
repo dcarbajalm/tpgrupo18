@@ -38,6 +38,7 @@
 .grid-container .lateral {
   grid-area: lateral;
   display: grid;
+   
 }
 
 /*Pie*/
@@ -80,7 +81,7 @@ h4 {
   font-family: 'Bitter', serif;
   text-align: center;
   font-size: 1.7rem;
-  background-color: #A5A58D;
+  /* background-color: #A5A58D;*/
 }
 
 p {
@@ -89,7 +90,8 @@ p {
   text-justify: distribute;
 }
 
-ul, li {
+ul,
+li {
   font-size: 1.4rem;
   font-family: 'Poiret One', cursive;
   color: rgb(0, 0, 0);
@@ -138,6 +140,7 @@ a:visited {
   max-width: 600px;
   width: 60%;
   justify-content: center;
+  align-self: center;
 }
 
 .video {
@@ -571,6 +574,7 @@ span {
 }
 
 
+
 /*=================================MAPA RESPONSIVO=====================================================*/
 .mapa {
   position: relative;
@@ -595,13 +599,12 @@ span {
 
 /*=================================QR RESPONSIVO=====================================================*/
 .imgqr {
-  position: relative;
+  position: abolute;
   overflow: hidden;
   width: 50%;
   min-height: 100px;
   min-width: 100px;
-  justify-self: center;
-  align-self: center;
+
   margin-left: 25%;
 }
 
@@ -736,12 +739,14 @@ span {
 /* ===================GRID PARA TABLETA====================================*/
 /*Hay algunos problemas con align y justify en este tamaño. Ver porque no logro hacerlo*/
 @media (max-width: 1024px) {
+
   /* .enlace{
     padding-left: 20px;
   } */
   html {
     font-size: 15px;
   }
+
   .grid-container {
 
     text-align: justify;
@@ -759,9 +764,12 @@ span {
   }
 
   .grid-container .lateral {
-    display: inline-flex;
-    justify-content: space-between;
-    
+    display: flex;
+    justify-content: left;
+    justify-items: center;
+    overflow: hidden;
+   
+
   }
 
   .contenido {
@@ -770,18 +778,19 @@ span {
 
   .qr_sect {
     width: 30%;
-    height: 100%;
+    /*height: 100%;*/
     justify-items: center;
     align-items: center;
     margin: 0;
-    margin-left: -12%;
+    margin-left: 0%;
     padding: 0;
   }
 
   .map_sect {
     width: 70%;
     justify-items: center;
-    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
   }
 
   h3 {
@@ -794,17 +803,17 @@ span {
     justify-self: center;
     align-self: center;
     width: 100%;
-    margin-left: -10%;
+    margin-left: 0%;
     min-height: 75px;
-    
+
   }
 
   .mapa {
     position: relative;
     justify-self: center;
+    align-self: center;
     width: 100%;
-    min-height: 75px;
-    min-width: 150px;
+    min-width: 400px;
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -833,9 +842,10 @@ span {
 
   .grid-container .lateral {
     display: block;
-    justify-content: center;
+    /*justify-content: center;*/
+    justify-items: center;
     align-items: center;
-    align-content: center;
+    /*    align-content: center;*/
   }
 
   .contenido {
@@ -844,10 +854,20 @@ span {
 
   .qr_sect {
     width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    padding: 0;
+    margin-left: 0px;
+    
+
   }
 
   .map_sect {
     width: 100%;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
   }
 
   h3 {
@@ -874,11 +894,11 @@ span {
   .contenedor {
     display: grid;
 
-    .video{
+    .video {
       width: 100%;
     }
 
-    .txtCD{
+    .txtCD {
       width: 100%;
     }
   }
