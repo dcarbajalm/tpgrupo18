@@ -21,7 +21,7 @@ function validarFormulario(event) {
 
     // Si todas las validaciones pasan, enviar el formulario
     alert('Logueo exitoso!');
-    window.open("https://656cc2621bfe4230dc01abaf--capable-meringue-a7e7df.netlify.app/", "_self");
+    window.open("https://tp2-grupo18back.netlify.app", "_self");
 }
 
 function validarUsuario(usuario) {
