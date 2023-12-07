@@ -1,7 +1,6 @@
 /* Estilos para todo el proyecto */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #B7B7A4;
 }
 
 .contenedor-centrado {
@@ -12,38 +11,51 @@ body {
 
 p {
     font-family: 'Times New Roman', Times, serif;
-    background-color: #f9f9f9;
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
     text-align: center;
-    color: #007bff;
+    color: black;
+    font-family: 'Oswald', sans-serif;
 }
 
+h3{
+    text-align: center;
+    color: black;
+    font-family: 'Bitter', serif;
+}
 form {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background-color: white;
-    border: 1px solid lightslategray;
+    /* background-color: white; */
+    /* border: 1px solid lightslategray; */
     border-radius: 5px;
+    border-style: double;
+    border-color: black;
 }
 
 table {
     max-width: 90%;
     margin: 0 auto;
     padding: 20px;
-    background-color: white;
-    border: 1px solid lightslategray;
+    border: black;
     border-radius: 5px;
+    border-style: double;
+}
+
+th {
+    font-family: 'Bitter', serif;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
 }
 
 input[type="text"],
@@ -52,8 +64,10 @@ textarea {
     width: 90%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #cccccc;
+    border: 1px solid #090909;
     border-radius: 5px;
+    /* background-color: #f1e7c5; */
+    background-color: #eeffdb;
 }
 
 input[type="submit"] {
@@ -72,27 +86,30 @@ input[type="submit"]:hover {
 button {
     padding: 8px;
     margin:4px;
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
+    border: 1px black;
+    border-style: double;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'Poiret One', cursive;
+    background-color: #B7B7A4;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #cd7b00;
 }
 
 a {
     padding: 8px;
     margin:4px;
-    background-color: #fdab13;
-    color: #ffffff;
-    border: none;
+    /* background-color: #e40f0f; */
+    border: 1px black;
+    color: black;
+    border-style: double;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
     font-size: 85%;
+    font-family: 'Poiret One', cursive;
 }
 
 a:hover {

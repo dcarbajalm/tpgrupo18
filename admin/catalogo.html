@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listado de Productos</title>
-    <link rel="stylesheet" href="/css/estilos_sonia.css">
+    <link rel="stylesheet" href="/css/estilos_catalogo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <h1>Listado de Productos</h1>
-    <h3>Codo a Codo 2023</h3>
+    <h1>Catálogo de Productos</h1>
+    <h3>The Music Store</h3>
 
         <div class="contenedor" id="tarjeta">
-            <div class="card">
+            <!-- <div class="card"> -->
             </div>
         </div>
-
 
         <!-- <table> Se crea una tabla para mostrar los productos.
             <thead> <!--Encabezado de la tabla con columnas para código, descripción, cantidad, precio y acciones.-->
@@ -62,12 +62,12 @@
                     for (let producto of data) {
                         let element = document.createElement('div');
                         element.className="card";
-                        element.innerHTML = '<img src=https://www.pythonanywhere.com/user/dcarbajal/files/home/dcarbajal/mysite/static/imagenes/' + producto.imagen_url + ' alt="Imagen del producto" style="width: 100px;">' + '<br><br><br>' + producto.descripcion +
-                        '<p align="left"><b>Nombre del Disco: </b>' + producto.proveedor + '</p>' +
+                        element.innerHTML = '<img src=https://www.pythonanywhere.com/user/dcarbajal/files/home/dcarbajal/mysite/static/imagenes/' + producto.imagen_url + ' alt="Imagen del producto" style="width: 100px;">' + '<br><br><br>' +  '<h4 align="center"> <b>' + producto.descripcion + '</b> </h4>' +
+                        '<p align="left"><b>Album: </b>' + producto.proveedor + '</p>' +
+                        '<p align="left"><b>Código: </b>' +  producto.codigo + '</p>' + 
                         '<p align="left"><b>Cantidad: </b>' + producto.cantidad + '</p>' +
-                        '<p align="left"><b>Precio: </b>'  + '$' + producto.precio + '</p>' +
-                        '<p align="left"><b>Código: </b>' +  producto.codigo + '</p>' +
-                        '<p><button onclick="agregarCatalogo()">Añadir al carrito</button></p>' +
+                        '<p align="left"><b>Precio: </b>' + producto.precio + '</p>' +
+                        '<p><button>Añadir al carrito</button></p>' +
                         '<br>' + '</div>';
 
                 //Esta función maneja los datos convertidos del JSON.

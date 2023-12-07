@@ -1,0 +1,54 @@
+body {
+    background-color: #B7B7A4;
+}
+h1{
+    text-align: center;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+.contenedor{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    padding: 20px;
+    font-family: 'Bitter', serif;
+    border-style: double;
+    font-weight: bold;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin:4px;
+    border: 1px black;
+    border-style: double;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poiret One', cursive;
+    background-color: #B7B7A4;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #090909;
+    border-radius: 5px;
+    /* background-color: #f1e7c5; */
+    background-color: #eeffdb;
+}
+
+.centrar{
+    /* width: 33.33%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
